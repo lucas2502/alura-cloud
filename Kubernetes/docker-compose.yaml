@@ -9,8 +9,9 @@ services:
     volumes:
       - /root/Cloud/Kubernetes/volume_mysql:/var/lib/mysql
   web:
-    image: aplicacao-loja:v1
+    image: rafanercessian/aplicacao-loja:v1
     ports:
       - 8080:80
     depends_on:
       - db
+  
