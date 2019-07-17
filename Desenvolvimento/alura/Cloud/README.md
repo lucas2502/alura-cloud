@@ -34,3 +34,6 @@
 #Criando imagem
 
 - docker build -f Dockerfile -t lucas2502/node .
+
+#Rodando container
+- docker run --network NOME_REDE -d -p 8080:3000 -v "$(pwd)/var/www:/var/www" NOME_IMAGEM:TAG 
